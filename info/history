@@ -1,0 +1,31 @@
+ #!/bin/bash -li
+    2  cd /ide/xterm || exit
+    3  exec /ide/xterm/bin/node /ide/xterm/index.cjs "$@"
+    4  gti checkout -b game
+    5  git  checkout -b game
+    6  mkdir users
+    7  cd users
+    8  mkdir files
+    9  cd files
+   10  mkdir name
+   11  cd name
+   12  touch nickname
+   13  touch file
+   14  cd ..
+   15  touch nik-user
+   16  cd ..
+   17  mrdir games
+   18  mkdir games
+   19  cd games
+   20  touch game {0..49}.txt 
+   21  ls
+   22  cd ..
+   23  cd users/files/name
+   24  nano nickname
+   25  cd ..
+   26  mkdir info
+   27  cd info
+   28  touch history
+   29  nano  history
+   30  history
+
